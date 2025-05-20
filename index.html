@@ -5,33 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Raphael Rodrigues - Currículo</title>
   <style>
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
+      background-color: #121212;
+      color: #e0e0e0;
       margin: 0;
       padding: 40px;
-      color: #333;
+      animation: fadeInUp 1s ease-out;
     }
+
     .container {
       max-width: 900px;
       margin: auto;
-      background-color: #fff;
+      background-color: #1e1e1e;
       padding: 40px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      animation: fadeInUp 1.2s ease-out;
     }
-    h1 { font-size: 36px; margin-bottom: 0; }
-    h2 { font-size: 20px; margin-top: 40px; color: #555; }
-    p, li { font-size: 16px; line-height: 1.6; }
-    ul { padding-left: 20px; }
-    .contact a { color: #007acc; text-decoration: none; }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 5px;
+      color: #90caf9;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 40px;
+      color: #64b5f6;
+    }
+
+    p, li {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #81d4fa;
+      text-decoration: none;
+    }
+
     .skills span {
       display: inline-block;
-      background: #eef;
+      background: #263238;
       margin: 4px;
       padding: 6px 12px;
       border-radius: 6px;
       font-size: 14px;
+    }
+
+    .button-download {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #03a9f4;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    .button-download:hover {
+      background-color: #0288d1;
+    }
+
+    @media (max-width: 600px) {
+      body, .container {
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -83,6 +137,8 @@
       <span>APIs</span>
       <span>Pipelines</span>
     </div>
+
+    <a class="button-download" href="cv_raphael_rodrigues.pdf" download>📄 Baixar Currículo em PDF</a>
   </div>
 </body>
 </html>
