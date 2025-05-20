@@ -8,9 +8,26 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #f4f4f4;
-      color: #333;
       margin: 0;
-      padding: 40px;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0d47a1;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     .container {
@@ -18,20 +35,11 @@
       margin: auto;
       background-color: #fff;
       padding: 40px;
-      border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    h1 {
-      font-size: 36px;
-      margin-bottom: 5px;
+    h1, h2 {
       color: #0d47a1;
-    }
-
-    h2 {
-      font-size: 22px;
-      margin-top: 40px;
-      color: #1565c0;
     }
 
     p, li {
@@ -41,11 +49,6 @@
 
     ul {
       padding-left: 20px;
-    }
-
-    a {
-      color: #1565c0;
-      text-decoration: none;
     }
 
     .skills span {
@@ -59,14 +62,13 @@
 
     .button-download {
       display: inline-block;
-      margin-top: 30px;
+      margin-top: 20px;
       padding: 12px 24px;
       background-color: #0d47a1;
       color: #fff;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s ease;
     }
 
     .button-download:hover {
@@ -78,66 +80,69 @@
       border-top: 1px dashed #bbb;
       margin: 30px 0;
     }
+
+    section {
+      padding-top: 60px;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <header>
     <h1>Raphael Rodrigues</h1>
-    <p><strong>Idade:</strong> 25 anos | <strong>Estado civil:</strong> Solteiro</p>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#atribuicoes">Atribuições</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-    <h2>📞 Contato</h2>
-    <p>
-      📧 <a href="mailto:rapa_rodrigues@hotmail.com">rapa_rodrigues@hotmail.com</a><br>
-      📱 (11) 99351-6076<br>
-      🔗 <a href="https://www.linkedin.com/in/raphael-rodrigues-680a5a160/" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/rodriguesraphael10872" target="_blank">GitHub</a><br>
-      📍 Rua Jaíba, 129 A – Ipiranga, São Paulo – SP
-    </p>
+  <div class="container">
 
-    <h2>💼 Experiência Profissional</h2>
-    <ul>
-      <li><strong>Supervisor/Coordenador de BI – Media Brands (Jul/2023 – Atual)</strong><br>
-        • Controle de demandas, relacionamento com clientes<br>
-        • Desenvolvimento de apps no Power Apps e uso de APIs<br>
-        • Governança de dados, GitHub, documentação e auditoria
-      </li>
-    </ul>
-    <hr>
+    <section id="inicio">
+      <h2>🏠 Início</h2>
+      <p><strong>Engenheiro de Dados | BI | SQL | APIs | Power Platform</strong></p>
+      <a class="button-download" href="cv_raphael_rodrigues.pdf" download>📄 Baixar Currículo em PDF</a>
+    </section>
 
-    <ul>
-      <li><strong>Analista de BI – Attivo Group (Out/2022 – Jul/2023)</strong><br>
-        • Estruturação da área de BI e arquitetura de banco de dados<br>
-        • Análises de concorrência, pricing e web scraping
-      </li>
-    </ul>
-    <hr>
+    <section id="atribuicoes">
+      <h2>🧩 Resumo Profissional</h2>
+      <p>
+        Profissional da área de dados com experiência sólida em Business Intelligence e transição ativa para Engenharia de Dados. Atuação em projetos de automação, construção de pipelines, integração de APIs, modelagem de banco de dados e visualização de dados. Forte domínio de ferramentas como Power BI, Power Apps, SQL, GitHub e Power Automate. Pós-graduando em Engenharia de Dados com foco em governança, performance e ingestão de dados estruturados.
+      </p>
 
-    <ul>
-      <li><strong>Analista de BI – E-Click CRM & Bonus (Out/2020 – Out/2022)</strong><br>
-        • Indicadores (KPIs), MySQL, Tableau<br>
-        • Análises sob demanda e apoio à equipe de TI
-      </li>
-    </ul>
+      <h2>💼 Experiência Profissional</h2>
+      <ul>
+        <li><strong>Supervisor/Coordenador de BI – Media Brands (Jul/2023 – Atual)</strong><br>
+          • Desenvolvimento de pipelines e APIs<br>
+          • Power Apps + GitHub + Governança de dados
+        </li>
+      </ul>
+      <hr>
+      <ul>
+        <li><strong>Analista de BI – Attivo Group (Out/2022 – Jul/2023)</strong><br>
+          • Modelagem de banco de dados, análises de pricing e web scraping
+        </li>
+      </ul>
+      <hr>
+      <ul>
+        <li><strong>Analista de BI – E-Click CRM & Bonus (Out/2020 – Out/2022)</strong><br>
+          • Criação de KPIs em MySQL/Tableau e apoio à arquitetura de dados
+        </li>
+      </ul>
+    </section>
 
-    <h2>🎓 Formação Acadêmica</h2>
-    <ul>
-      <li><strong>Pós-graduação em Engenharia de Dados</strong> – Anhanguera (2024–2025)</li>
-      <li><strong>Graduação em Redes de Computadores</strong> – Universidade Cruzeiro do Sul (2018–2020)</li>
-    </ul>
+    <section id="contato">
+      <h2>📞 Contato</h2>
+      <p>
+        📧 <a href="mailto:rapa_rodrigues@hotmail.com">rapa_rodrigues@hotmail.com</a><br>
+        📱 (11) 99351-6076<br>
+        🔗 <a href="https://www.linkedin.com/in/raphael-rodrigues-680a5a160/" target="_blank">LinkedIn</a><br>
+        💻 <a href="https://github.com/rodriguesraphael10872" target="_blank">GitHub</a><br>
+        📍 Rua Jaíba, 129 A – Ipiranga, São Paulo – SP
+      </p>
+    </section>
 
-    <h2>🧠 Habilidades Técnicas</h2>
-    <div class="skills">
-      <span>Power BI</span>
-      <span>Tableau</span>
-      <span>SQL</span>
-      <span>GitHub</span>
-      <span>Cloud</span>
-      <span>Power Platform</span>
-      <span>APIs</span>
-      <span>Pipelines</span>
-    </div>
-
-    <a class="button-download" href="cv_raphael_rodrigues.pdf" download>📄 Baixar Currículo em PDF</a>
   </div>
 </body>
 </html>
