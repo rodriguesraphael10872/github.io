@@ -1,165 +1,312 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Raphael Rodrigues - Data Engineer & BI Supervisor</title>
+  <title>Raphael Rodrigues | Data Engineer & BI Supervisor</title>
+
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
+      background: #f4f6f9;
       color: #333;
-      margin: 0;
-      padding: 40px;
+      padding: 40px 20px;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 950px;
       margin: auto;
-      background-color: #fff;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 50px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .header {
+      border-bottom: 2px solid #e3eaf3;
+      padding-bottom: 25px;
+      margin-bottom: 35px;
     }
 
     h1 {
-      font-size: 36px;
-      margin-bottom: 5px;
+      font-size: 42px;
       color: #0d47a1;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #555;
+      font-weight: 500;
     }
 
     h2 {
-      font-size: 22px;
-      margin-top: 40px;
+      font-size: 24px;
       color: #1565c0;
+      margin-top: 35px;
+      margin-bottom: 18px;
     }
 
     p, li {
       font-size: 16px;
-      line-height: 1.6;
+      line-height: 1.8;
+      color: #444;
     }
 
     ul {
-      padding-left: 20px;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .experience-item {
+      margin-bottom: 25px;
+    }
+
+    .experience-item strong {
+      color: #111;
+      font-size: 17px;
+    }
+
+    .experience-item p {
+      margin-top: 8px;
     }
 
     a {
       color: #1565c0;
       text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
     }
 
     .skills span {
-      display: inline-block;
       background: #e3f2fd;
-      margin: 4px;
-      padding: 6px 12px;
-      border-radius: 6px;
+      color: #0d47a1;
+      padding: 10px 14px;
+      border-radius: 8px;
       font-size: 14px;
+      font-weight: 600;
     }
 
     .button-download {
       display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      background-color: #0d47a1;
+      margin-top: 40px;
+      padding: 14px 28px;
+      background: #0d47a1;
       color: #fff;
-      border-radius: 8px;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s ease;
+      transition: 0.3s ease;
     }
 
     .button-download:hover {
-      background-color: #08306b;
+      background: #08306b;
+      text-decoration: none;
+    }
+
+    .contact p {
+      margin-bottom: 5px;
     }
 
     hr {
       border: none;
-      border-top: 1px dashed #bbb;
-      margin: 30px 0;
+      border-top: 1px solid #e5e5e5;
+      margin: 25px 0;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
+
 <body>
+
   <div class="container">
-    <h1>Raphael Rodrigues</h1>
-    <p><strong>Data Enginee & BI Supervisorr</strong> | 26 anos</p>
 
-    <h2>📞 Contato</h2>
-    <p>
-      📧 <a href="mailto:rapa_rodrigues@hotmail.com">rapa_rodrigues@hotmail.com</a><br>
-      📱 (11) 99351-6076<br>
-      🔗 <a href="https://www.linkedin.com/in/raphael-rodrigues-680a5a160/" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/rodriguesraphael10872" target="_blank">GitHub</a><br>
-      📍 Zona Sul – Ipiranga, São Paulo – SP
-    </p>
-
-    <h2>📄 Resumo Profissional</h2>
-    <p>
-      Engenheiro de Dados com experiência em orquestração de pipelines, automação de processos e modelagem de dados em larga escala. Atuação em projetos de dados, analytics e governança utilizando <strong>Python, SQL, PySpark, Databricks, BigQuery, Power BI</strong> e integrações via <strong>APIs REST</strong>. Experiência com cloud, governança de ambientes analíticos, IA aplicada a analytics e desenvolvimento de soluções escaláveis para negócio.
-    </p>
-
-    <h2>💼 Experiência Profissional</h2>
-
-    <ul>
-      <li><strong>Especialista Dataviz – Claro (Dez/2025 – Atual)</strong><br>
-        • Governança da plataforma Power BI<br>
-        • Estruturação de acessos, workspaces e boas práticas<br>
-        • Implementação de soluções com IA e Microsoft Fabric<br>
-        • Suporte estratégico para analytics e BI corporativo
-      </li>
-    </ul>
-    <hr>
-
-    <ul>
-      <li><strong>Supervisor/Coordenador de BI – Mediabrands Brasil (Jul/2023 – Dez/2025)</strong><br>
-        • Orquestração de pipelines em Python, PySpark e BigQuery<br>
-        • Integração de dados via APIs (Google Ads, Meta, VTEX)<br>
-        • Governança e versionamento de código com GitHub<br>
-        • Desenvolvimento de apps em Power Apps e automações Power Automate
-      </li>
-    </ul>
-    <hr>
-
-    <ul>
-      <li><strong>Analista de BI – Attivo Group (Out/2022 – Jul/2023)</strong><br>
-        • Estruturação de data warehouse e rotinas ETL<br>
-        • Web scraping e análise de concorrência com Python
-      </li>
-    </ul>
-    <hr>
-
-    <ul>
-      <li><strong>Analista de BI – E-Click CRM & Bonus (Out/2020 – Out/2022)</strong><br>
-        • KPIs em MySQL e Tableau<br>
-        • Automatização de relatórios e análises
-      </li>
-    </ul>
-
-    <h2>🎓 Formação Acadêmica</h2>
-    <ul>
-      <li><strong>Pós-graduação em Engenharia de Dados</strong> – Anhanguera (2024–2025)</li>
-      <li><strong>Graduação em Redes de Computadores</strong> – Universidade Cruzeiro do Sul (2018–2020)</li>
-    </ul>
-
-    <h2>🧠 Habilidades Técnicas</h2>
-    <div class="skills">
-      <span>Python</span>
-      <span>SQL</span>
-      <span>PySpark</span>
-      <span>Databricks</span>
-      <span>BigQuery</span>
-      <span>Power BI</span>
-      <span>Tableau</span>
-      <span>Power Platform</span>
-      <span>APIs REST</span>
-      <span>Cloud (GCP)</span>
-      <span>ETL / ELT</span>
-      <span>Microsoft Fabric</span>
-      <span>IA aplicada a Analytics</span>
+    <div class="header">
+      <h1>Raphael Rodrigues</h1>
+      <p class="subtitle">
+        Data Engineer & BI Supervisor | 26 anos
+      </p>
     </div>
 
-    <a class="button-download" href="cv_raphael_rodrigues.pdf" download>📄 Baixar Currículo em PDF</a>
+    <section class="contact">
+      <h2>📞 Contato</h2>
+
+      <p>
+        📧
+        <a href="mailto:rapa_rodrigues@hotmail.com">
+          rapa_rodrigues@hotmail.com
+        </a>
+      </p>
+
+      <p>📱 (11) 99351-6076</p>
+
+      <p>
+        🔗
+        <a href="https://www.linkedin.com/in/raphael-rodrigues-680a5a160/" target="_blank">
+          LinkedIn
+        </a>
+        |
+        <a href="https://github.com/rodriguesraphael10872" target="_blank">
+          GitHub
+        </a>
+      </p>
+
+      <p>📍 São Paulo – SP</p>
+    </section>
+
+    <section>
+      <h2>📄 Resumo Profissional</h2>
+
+      <p>
+        Engenheiro de Dados com sólida experiência na construção de pipelines,
+        automação de processos, modelagem de dados e governança analítica em larga escala.
+        Atuação estratégica em projetos de BI, analytics e engenharia de dados utilizando
+        <strong>Python, SQL, PySpark, Databricks, BigQuery, Power BI</strong>
+        e integrações via <strong>APIs REST</strong>.
+
+        Experiência com cloud computing, Microsoft Fabric, governança de ambientes analíticos,
+        IA aplicada a analytics e desenvolvimento de soluções escaláveis voltadas ao negócio.
+      </p>
+    </section>
+
+    <section>
+      <h2>💼 Experiência Profissional</h2>
+
+      <div class="experience-item">
+        <strong>
+          Especialista Dataviz – Claro
+          (Dez/2025 – Atual)
+        </strong>
+
+        <p>
+          • Governança da plataforma Power BI<br>
+          • Estruturação de acessos, workspaces e boas práticas<br>
+          • Implementação de soluções com IA e Microsoft Fabric<br>
+          • Suporte estratégico para analytics e BI corporativo
+        </p>
+      </div>
+
+      <hr>
+
+      <div class="experience-item">
+        <strong>
+          Supervisor / Coordenador de BI – Mediabrands Brasil
+          (Jul/2023 – Dez/2025)
+        </strong>
+
+        <p>
+          • Orquestração de pipelines em Python, PySpark e BigQuery<br>
+          • Integração de dados via APIs (Google Ads, Meta, VTEX)<br>
+          • Governança e versionamento de código com GitHub<br>
+          • Desenvolvimento de aplicações em Power Apps e automações Power Automate
+        </p>
+      </div>
+
+      <hr>
+
+      <div class="experience-item">
+        <strong>
+          Analista de BI – Attivo Group
+          (Out/2022 – Jul/2023)
+        </strong>
+
+        <p>
+          • Estruturação de Data Warehouse e rotinas ETL<br>
+          • Web scraping e análise de concorrência com Python
+        </p>
+      </div>
+
+      <hr>
+
+      <div class="experience-item">
+        <strong>
+          Analista de BI – E-Click CRM & Bonus
+          (Out/2020 – Out/2022)
+        </strong>
+
+        <p>
+          • Desenvolvimento de KPIs em MySQL e Tableau<br>
+          • Automatização de relatórios e análises de negócio
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>🎓 Formação Acadêmica</h2>
+
+      <ul>
+        <li>
+          <strong>Pós-graduação em Engenharia de Dados</strong>
+          – Anhanguera (2024 – 2025)
+        </li>
+
+        <li>
+          <strong>Graduação em Redes de Computadores</strong>
+          – Universidade Cruzeiro do Sul (2018 – 2020)
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🧠 Habilidades Técnicas</h2>
+
+      <div class="skills">
+        <span>Python</span>
+        <span>SQL</span>
+        <span>PySpark</span>
+        <span>Databricks</span>
+        <span>BigQuery</span>
+        <span>Power BI</span>
+        <span>Tableau</span>
+        <span>Power Platform</span>
+        <span>APIs REST</span>
+        <span>Cloud (GCP)</span>
+        <span>ETL / ELT</span>
+        <span>Microsoft Fabric</span>
+        <span>IA aplicada a Analytics</span>
+      </div>
+    </section>
+
+    <a
+      class="button-download"
+      href="cv_raphael_rodrigues.pdf"
+      download
+    >
+      📄 Baixar Currículo em PDF
+    </a>
+
   </div>
+
 </body>
 </html>
+```
